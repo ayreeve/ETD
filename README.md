@@ -4,12 +4,9 @@ Used:
 - HTML
 - CSS (SASS)
 - RWD
-- JS
 - Grunt, Git
 
 What’s more?
 - my own grid
-- GSAP
-- slick
 
-![devices_preview]()
+![devices_preview](https://image.ibb.co/cTy4Cv/Estimote_test_drive.png)

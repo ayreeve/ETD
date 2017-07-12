@@ -1,0 +1,475 @@
+/* GLOBAL */
+/* line 2, sass/style.sass */
+* {
+  box-sizing: border-box; }
+
+/* line 5, sass/style.sass */
+body {
+  margin: 0;
+  background-color: #211d70;
+  font-family: 'Brandon Text Medium', Arial, sans-serif;
+  color: #fff; }
+
+/* line 11, sass/style.sass */
+section {
+  width: 100%; }
+  /* line 14, sass/style.sass */
+  section .container {
+    text-align: center; }
+
+/* line 17, sass/style.sass */
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+/* fonts */
+@font-face {
+  font-family: 'Brandon Text Medium';
+  src: url("../fonts/HVD FONTS - BRANDONTEXT-MEDIUM.ttf"); }
+
+/* line 26, sass/style.sass */
+h1 {
+  font-size: 2.125em;
+  font-weight: lighter; }
+
+/* line 30, sass/style.sass */
+h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: left; }
+
+/* line 35, sass/style.sass */
+p {
+  margin: 0;
+  font-family: font122183, Arial, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  hyphens: auto; }
+
+/* mixins */
+/* GRID */
+/* line 49, sass/style.sass */
+[class*="col-"] {
+  min-height: 1px;
+  padding: 12px 30px;
+  float: left; }
+
+/* clearfix */
+/* line 55, sass/style.sass */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* LOGO */
+/* line 62, sass/style.sass */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 58px;
+  cursor: pointer;
+  transition: .8s; }
+  /* line 68, sass/style.sass */
+  .logo:hover {
+    opacity: .7;
+    transform: scale(1.1); }
+
+/* BUTTON */
+/* line 73, sass/style.sass */
+.sign_up {
+  position: absolute;
+  top: 27px;
+  right: 40px;
+  padding: 10px 20px;
+  background-color: #211d70;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer; }
+  /* line 82, sass/style.sass */
+  .sign_up:hover {
+    background-color: rgba(255, 255, 255, 0.08); }
+
+/* OFFER */
+/* line 88, sass/style.sass */
+.offer h1 {
+  margin: 150px 0 0; }
+
+/* line 91, sass/style.sass */
+.offer p {
+  margin-bottom: 75px; }
+
+/* ICONS */
+/* line 96, sass/style.sass */
+.icons img {
+  height: 110px; }
+
+/* line 99, sass/style.sass */
+figure {
+  margin: 0; }
+
+/* line 102, sass/style.sass */
+figcaption {
+  padding-bottom: 150px; }
+  /* line 105, sass/style.sass */
+  figcaption p {
+    text-align: left; }
+  /* line 108, sass/style.sass */
+  figcaption h2 {
+    margin: 22px 0 0; }
+
+/* MORE */
+/* line 113, sass/style.sass */
+.more {
+  padding-top: 100px;
+  background-color: #f5a4c7;
+  color: #000; }
+  /* line 118, sass/style.sass */
+  .more .container {
+    max-width: 100%; }
+
+/* line 121, sass/style.sass */
+.tell_col {
+  padding: 0;
+  position: relative;
+  top: 140px; }
+
+/* line 126, sass/style.sass */
+.iphone {
+  padding-left: 0;
+  position: relative;
+  top: 100px; }
+
+/* IMPLEMENTATION */
+/* line 133, sass/style.sass */
+.implementation {
+  background-color: #b7d6c1;
+  padding-bottom: 60px; }
+  /* line 137, sass/style.sass */
+  .implementation h1 {
+    margin-top: 140px;
+    text-align: left;
+    color: #000; }
+  /* line 142, sass/style.sass */
+  .implementation p {
+    color: #000; }
+
+/* line 145, sass/style.sass */
+.store {
+  position: relative;
+  top: 100px; }
+
+/* line 149, sass/style.sass */
+table {
+  margin: 40px 0;
+  display: inline-block;
+  border-collapse: collapse; }
+
+/* line 154, sass/style.sass */
+td {
+  padding: 9px 42px;
+  border: 1px solid;
+  font-size: 18px;
+  color: #6e917c; }
+
+/* SCROLLBAR */
+/* line 162, sass/style.sass */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent; }
+
+/* line 167, sass/style.sass */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: #F5F5F5; }
+
+/* line 173, sass/style.sass */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a7a5a5; }
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+  /* GRID (for desktop): */
+  /* line 182, sass/style.sass */
+  .col-m-1 {
+    width: 8.33%; }
+  /* line 184, sass/style.sass */
+  .col-m-2 {
+    width: 16.66%; }
+  /* line 186, sass/style.sass */
+  .col-m-3 {
+    width: 25%; }
+  /* line 188, sass/style.sass */
+  .col-m-4 {
+    width: 33.33%; }
+  /* line 190, sass/style.sass */
+  .col-m-5 {
+    width: 41.66%; }
+  /* line 192, sass/style.sass */
+  .col-m-6 {
+    width: 50%; }
+  /* line 194, sass/style.sass */
+  .col-m-7 {
+    width: 58.33%; }
+  /* line 196, sass/style.sass */
+  .col-m-8 {
+    width: 66.66%; }
+  /* line 198, sass/style.sass */
+  .col-m-9 {
+    width: 75%; }
+  /* line 200, sass/style.sass */
+  .col-m-10 {
+    width: 83.33%; }
+  /* line 202, sass/style.sass */
+  .col-m-11 {
+    width: 91.66%; }
+  /* line 204, sass/style.sass */
+  .col-m-12 {
+    width: 100%; }
+  /* offset */
+  /* line 208, sass/style.sass */
+  .col-offset-1 {
+    margin-left: 8.33%; }
+  /* line 210, sass/style.sass */
+  .col-offset-2 {
+    margin-left: 16.66%; }
+  /* line 212, sass/style.sass */
+  .col-offset-3 {
+    margin-left: 25%; }
+  /* line 214, sass/style.sass */
+  .col-offset-4 {
+    margin-left: 33.33%; }
+  /* line 216, sass/style.sass */
+  .col-offset-5 {
+    margin-left: 41.66%; }
+  /* line 218, sass/style.sass */
+  .col-offset-6 {
+    margin-left: 50%; }
+  /* line 220, sass/style.sass */
+  .col-offset-7 {
+    margin-left: 58.33%; }
+  /* line 222, sass/style.sass */
+  .col-offset-8 {
+    margin-left: 66.66%; }
+  /* line 224, sass/style.sass */
+  .col-offset-9 {
+    margin-left: 75%; }
+  /* line 226, sass/style.sass */
+  .col-offset-12 {
+    margin-left: 83.33%; }
+  /* line 228, sass/style.sass */
+  .col-offset-11 {
+    margin-left: 91.66%; } }
+
+@media (max-width: 768px) {
+  /* GRID (for tablets & mobiles): */
+  /* line 233, sass/style.sass */
+  .col-s-1 {
+    width: 8.33%; }
+  /* line 235, sass/style.sass */
+  .col-s-2 {
+    width: 16.66%; }
+  /* line 237, sass/style.sass */
+  .col-s-3 {
+    width: 25%; }
+  /* line 239, sass/style.sass */
+  .col-s-4 {
+    width: 33.33%; }
+  /* line 241, sass/style.sass */
+  .col-s-5 {
+    width: 41.66%; }
+  /* line 243, sass/style.sass */
+  .col-s-6 {
+    width: 50%; }
+  /* line 245, sass/style.sass */
+  .col-s-7 {
+    width: 58.33%; }
+  /* line 247, sass/style.sass */
+  .col-s-8 {
+    width: 66.66%; }
+  /* line 249, sass/style.sass */
+  .col-s-9 {
+    width: 75%; }
+  /* line 251, sass/style.sass */
+  .col-s-10 {
+    width: 83.33%; }
+  /* line 253, sass/style.sass */
+  .col-s-11 {
+    width: 91.66%; }
+  /* line 255, sass/style.sass */
+  .col-s-12 {
+    width: 100%; }
+  /* STYLES */
+  /* global */
+  /* line 260, sass/style.sass */
+  body {
+    font-size: 14px; }
+  /* offer */
+  /* line 264, sass/style.sass */
+  .offer p {
+    padding: 0 0px;
+    margin-bottom: 30px; }
+  /* icons */
+  /* line 269, sass/style.sass */
+  .icons {
+    padding-bottom: 50px; }
+  /* line 273, sass/style.sass */
+  figure img {
+    position: relative;
+    top: 20px; }
+  /* more */
+  /* line 278, sass/style.sass */
+  .more {
+    padding: 40px 0 0; }
+  /* line 281, sass/style.sass */
+  .beacons {
+    width: 40%; }
+  /* line 284, sass/style.sass */
+  .tell_col {
+    margin-bottom: 0;
+    padding: 0 40px;
+    top: 0; }
+  /* line 289, sass/style.sass */
+  .iphone {
+    width: 40%;
+    top: 100px;
+    left: 450px; }
+  /* implementation */
+  /* line 296, sass/style.sass */
+  .store {
+    top: 0;
+    transform: scale(0.7); }
+  /* line 300, sass/style.sass */
+  .implementation h1 {
+    margin-top: -50px; } }
+
+@media (max-width: 480px) {
+  /* global */
+  /* line 307, sass/style.sass */
+  section .container {
+    text-align: left; }
+  /* line 310, sass/style.sass */
+  p {
+    font-size: 16px;
+    text-align: left; }
+  /*logo */
+  /* line 315, sass/style.sass */
+  .logo {
+    top: 20px;
+    left: 8px;
+    transform: scale(0.8); }
+  /* header, offer */
+  /* line 322, sass/style.sass */
+  .offer h1 {
+    margin: 90px 0 13px 0;
+    padding: 0 24px;
+    margin-top: 123px; }
+  /* line 327, sass/style.sass */
+  .offer p {
+    margin-bottom: 0;
+    padding: 0 12px 0 30px; }
+  /* table */
+  /* line 332, sass/style.sass */
+  .implementation h1 {
+    margin-bottom: 29px;
+    padding: 0 23px;
+    text-align: left; }
+  /* line 337, sass/style.sass */
+  td {
+    font-size: 14px; } }
+
+@media (max-width: 320px) {
+  /* global */
+  /* line 343, sass/style.sass */
+  body {
+    font-size: 12px; }
+  /* logo */
+  /* line 347, sass/style.sass */
+  .logo {
+    width: inherit; }
+    /* line 349, sass/style.sass */
+    .logo:hover {
+      transform: scale(0.75); }
+  /* offer */
+  /* line 354, sass/style.sass */
+  .offer h1 {
+    margin-left: -2px; }
+  /* line 356, sass/style.sass */
+  .offer p {
+    margin-left: -8px; }
+  /* line 358, sass/style.sass */
+  .sign_up {
+    top: 20px;
+    right: 20px; }
+  /* icons + texts */
+  /* line 363, sass/style.sass */
+  .icons {
+    margin-bottom: -220px; }
+  /* line 366, sass/style.sass */
+  .awesome_row,
+  .breakfast_row,
+  .garden_row {
+    padding: 5px;
+    position: relative; }
+  /* line 372, sass/style.sass */
+  .awesome_row {
+    right: 10px; }
+  /* line 375, sass/style.sass */
+  .chair {
+    position: relative;
+    top: 50px;
+    left: 5px; }
+  /* line 380, sass/style.sass */
+  .food {
+    right: 15px; }
+  /* line 383, sass/style.sass */
+  .breakfast_row {
+    top: -120px;
+    left: 100px; }
+  /* line 387, sass/style.sass */
+  .garden {
+    top: -100px;
+    left: 150px; }
+  /* line 391, sass/style.sass */
+  .garden_row {
+    bottom: 250px;
+    right: 10px; }
+  /* more */
+  /* line 397, sass/style.sass */
+  .beacons {
+    width: 100%;
+    position: relative;
+    right: 90px; }
+  /* line 402, sass/style.sass */
+  .iphone {
+    width: 80%;
+    top: 20px;
+    left: 120px; }
+  /* line 407, sass/style.sass */
+  .iphone_wrapper {
+    width: 313px;
+    height: 250px;
+    overflow: hidden; }
+  /* imlementation */
+  /* line 413, sass/style.sass */
+  .store {
+    top: 100px;
+    transform: scale(1.5); }
+  /* line 417, sass/style.sass */
+  .store_wrapper {
+    overflow: hidden;
+    height: 410px;
+    margin-bottom: 70px; }
+  /* line 422, sass/style.sass */
+  .implementation h1 {
+    padding: 0;
+    font-size: 1.9em; }
+  /* table */
+  /* line 429, sass/style.sass */
+  table td {
+    padding: 5px 15px;
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

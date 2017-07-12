@@ -1,0 +1,431 @@
+/* GLOBAL */
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    background-color: #211d70
+    font-family: 'Brandon Text Medium', Arial, sans-serif
+    color: #fff
+    
+section
+    width: 100%
+    
+    .container 
+        text-align: center
+    
+.container 
+    max-width: 1000px
+    margin: 0 auto
+
+/* fonts */    
+@font-face 
+    font-family: 'Brandon Text Medium'
+    src: url('../fonts/HVD FONTS - BRANDONTEXT-MEDIUM.ttf')
+    
+h1
+    font-size: 2.125em
+    font-weight: lighter
+    
+h2
+    font-size: 24px
+    font-weight: lighter
+    text-align: left
+
+p
+    margin: 0
+    font-family: font122183, Arial, sans-serif
+    font-size: 18px
+    text-align: justify
+    hyphens: auto
+    
+/* mixins */
+=position($position)
+    position: $position
+    top: 0
+    left: 0
+
+/* GRID */
+[class*="col-"] 
+    min-height: 1px
+    padding: 12px 30px
+    float: left
+    
+/* clearfix */
+.row:before,
+.row:after 
+    content: ""
+    display: table
+    clear: both
+
+/* LOGO */
+.logo
+    position: absolute
+    top: 30px
+    left: 58px
+    cursor: pointer
+    transition: .8s
+    &:hover
+        opacity: .7
+        transform: scale(1.1)
+        
+/* BUTTON */
+.sign_up
+    position: absolute
+    top: 27px
+    right: 40px
+    padding: 10px 20px
+    background-color: #211d70
+    border: 1px solid #fff
+    color: #fff
+    cursor: pointer
+    &:hover
+        background-color: rgba(255, 255, 255, 0.08)
+                  
+/* OFFER */
+
+.offer 
+    h1
+        margin: 150px 0 0
+
+    p
+        margin-bottom: 75px
+        
+/* ICONS */
+
+.icons img
+    height: 110px
+    
+figure
+    margin: 0
+
+figcaption
+    padding-bottom: 150px
+    
+    p
+        text-align: left
+                
+    h2
+        margin: 22px 0 0
+            
+/* MORE */
+
+.more
+    padding-top: 100px
+    background-color: #f5a4c7
+    color: #000
+    
+    .container
+        max-width: 100%
+
+.tell_col
+    padding: 0
+    position: relative
+    top: 140px
+    
+.iphone
+    padding-left: 0
+    position: relative
+    top: 100px
+            
+/* IMPLEMENTATION */
+
+.implementation
+    background-color: #b7d6c1
+    padding-bottom: 60px
+        
+    h1
+        margin-top: 140px
+        text-align: left
+        color: #000
+    
+    p
+        color: #000
+    
+.store
+    position: relative
+    top: 100px
+   
+table
+    margin: 40px 0
+    display: inline-block
+    border-collapse: collapse
+    
+td
+    padding: 9px 42px
+    border: 1px solid
+    font-size: 18px
+    color: #6e917c
+        
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track
+    border-radius: 10px
+    background-color: transparent
+
+
+::-webkit-scrollbar 
+    width: 7px
+    height: 7px
+    background-color: #F5F5F5
+
+
+::-webkit-scrollbar-thumb 
+    border-radius: 10px
+    background-color: #a7a5a5
+   
+
+/* MEDIA QUERIES */
+    
+@media (min-width: 769px)
+    /* GRID (for desktop): */
+    .col-m-1 
+        width: 8.33%
+    .col-m-2 
+        width: 16.66%
+    .col-m-3 
+        width: 25%
+    .col-m-4 
+        width: 33.33%
+    .col-m-5 
+        width: 41.66%
+    .col-m-6 
+        width: 50%
+    .col-m-7
+        width: 58.33%
+    .col-m-8 
+        width: 66.66%
+    .col-m-9 
+        width: 75%
+    .col-m-10 
+        width: 83.33%
+    .col-m-11 
+        width: 91.66%
+    .col-m-12
+        width: 100%
+        
+    /* offset */
+    .col-offset-1 
+        margin-left: 8.33%
+    .col-offset-2 
+        margin-left: 16.66%
+    .col-offset-3
+        margin-left: 25%
+    .col-offset-4
+        margin-left: 33.33%
+    .col-offset-5 
+        margin-left: 41.66%
+    .col-offset-6
+        margin-left: 50%
+    .col-offset-7
+        margin-left: 58.33%
+    .col-offset-8
+        margin-left: 66.66%
+    .col-offset-9
+        margin-left: 75%
+    .col-offset-12
+        margin-left: 83.33%
+    .col-offset-11 
+        margin-left: 91.66%    
+        
+@media (max-width: 768px)
+    /* GRID (for tablets & mobiles): */
+    .col-s-1 
+        width: 8.33%
+    .col-s-2 
+        width: 16.66%
+    .col-s-3 
+        width: 25%
+    .col-s-4 
+        width: 33.33%
+    .col-s-5 
+        width: 41.66%
+    .col-s-6 
+        width: 50%
+    .col-s-7 
+        width: 58.33%
+    .col-s-8 
+        width: 66.66%
+    .col-s-9 
+        width: 75%
+    .col-s-10 
+        width: 83.33%
+    .col-s-11 
+        width: 91.66%
+    .col-s-12 
+        width: 100%
+        
+    /* STYLES */
+    /* global */
+    body
+        font-size: 14px
+        
+    /* offer */
+    .offer p
+        padding: 0 0px
+        margin-bottom: 30px
+        
+    /* icons */
+    .icons
+        padding-bottom: 50px
+        
+    figure
+        img
+            position: relative
+            top: 20px
+            
+    /* more */ 
+    .more 
+        padding: 40px 0 0
+        
+    .beacons
+        width: 40%
+                        
+    .tell_col
+        margin-bottom: 0
+        padding: 0 40px
+        top: 0
+        
+    .iphone
+        width: 40%
+        top: 100px
+        left: 450px
+        
+    /* implementation */
+      
+    .store
+        top: 0
+        transform: scale(.7)
+        
+    .implementation h1
+        margin-top: -50px
+        
+        
+@media (max-width: 480px)
+    /* global */
+    section
+        .container 
+            text-align: left
+     
+    p
+        font-size: 16px
+        text-align: left
+           
+    /*logo */    
+    .logo
+        top: 20px
+        left: 8px
+        transform: scale(.8)
+                    
+    /* header, offer */    
+    .offer
+        h1
+            margin: 90px 0 13px 0
+            padding: 0 24px
+            margin-top: 123px
+    
+        p
+            margin-bottom: 0
+            padding: 0 12px 0 30px
+        
+    /* table */
+    .implementation h1
+        margin-bottom: 29px
+        padding: 0 23px
+        text-align: left
+        
+    td
+        font-size: 14px
+
+       
+@media (max-width: 320px)
+    /* global */
+    body
+        font-size: 12px
+    
+    /* logo */
+    .logo
+        width: inherit
+        &:hover
+            transform: scale(.75)
+        
+    /* offer */
+    .offer
+        h1
+            margin-left: -2px
+        p
+            margin-left: -8px
+    .sign_up
+        top: 20px
+        right: 20px
+        
+    /* icons + texts */
+    .icons
+        margin-bottom: -220px
+    
+    .awesome_row,
+    .breakfast_row,
+    .garden_row
+        padding: 5px
+        position: relative
+    
+    .awesome_row
+        right: 10px
+        
+    .chair
+        position: relative
+        top: 50px
+        left: 5px
+    
+    .food
+        right: 15px
+        
+    .breakfast_row
+        top: -120px
+        left: 100px
+        
+    .garden
+        top: -100px
+        left: 150px
+                
+    .garden_row
+        bottom: 250px
+        right: 10px
+        
+    /* more */
+            
+    .beacons
+        width: 100%
+        position: relative
+        right: 90px
+        
+    .iphone
+        width: 80%
+        top: 20px
+        left: 120px
+        
+    .iphone_wrapper
+        width: 313px
+        height: 250px
+        overflow: hidden
+        
+    /* imlementation */    
+    .store
+        top: 100px
+        transform: scale(1.5)
+        
+    .store_wrapper
+        overflow: hidden
+        height: 410px
+        margin-bottom: 70px
+        
+    .implementation h1
+        padding: 0
+        font-size: 1.9em
+        
+    /* table */
+                 
+    table
+        td
+            padding: 5px 15px
+            text-align: center
